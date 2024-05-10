@@ -20,6 +20,7 @@
 ::-webkit-scrollbar-track {
   background: #FDEDF1;
   border-radius: 20px;
+  margin: 0 50px;
 }
 ::-webkit-scrollbar-thumb {
   background: #E11C93;
