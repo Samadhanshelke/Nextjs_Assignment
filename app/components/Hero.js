@@ -9,13 +9,13 @@ function Hero() {
     <div className='sm:h-[70vh] h-full w-full min-w-[200px] sm:w-full overflow-x-scroll sm:overflow-x-hidden flex flex-row sm:flex-col gap-x-8  sm:gap-y-8 p-8  sm:overflow-y-scroll' >
       {data.map((item) => {
         return (
-          <div className="flex min-w-[1000px] sm:min-w-full p-6 sm:p-0  justify-between flex-col gap-y-8 items-center sm:flex-row m-auto  ">
+          <div key={item.id} className="flex min-w-[1000px] sm:min-w-full p-6 sm:p-0  justify-between flex-col gap-y-8 items-center sm:flex-row m-auto  ">
           {
             item.id === 1 
-            ? <Image src={step1} width={400} height={300} className="w-[8000px] sm:w-[356px]"/>
+            ? <Image src={step1} width={400} height={300} className="w-[8000px] sm:w-[356px]" alt="hero1"/>
             : item.id === 2
-            ?<Image src={step2} width={400} height={300} className="w-[8000px] sm:w-[400px]"/>
-            : <Image src={step3} width={400} height={300} className="w-[8000px] sm:w-[400px]"/>
+            ?<Image src={step2} width={400} height={300} className="w-[8000px] sm:w-[400px]"  alt="hero2"/>
+            : <Image src={step3} width={400} height={300} className="w-[8000px] sm:w-[400px]"  alt="hero3"/>
 
           }
            
