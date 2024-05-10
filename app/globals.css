@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-clips {
+  background: linear-gradient(60deg, rgb(241, 71, 222), rgb(186, 90, 171), rgb(175, 94, 157), rgb(46, 89, 231), rgb(137, 165, 222));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0 0 0 / 20%);
+}
+
+/* Firefox */
+/* scrollbar-color: #333 #fff; */
+
+/* WebKit */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #FDEDF1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #E11C93;
+  border-radius: 20px;
+}
