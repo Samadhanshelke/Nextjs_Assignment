@@ -8,10 +8,10 @@ import msg2 from '../Images/msg2.svg'
 import data from "../utils/data";
 function Hero() {
   return (
-    <div className='sm:h-[70vh] h-full w-[400px] ms-8   sm:w-full overflow-x-scroll sm:overflow-x-hidden flex flex-row sm:flex-col  sm:gap-y-8  sm:overflow-y-scroll' >
+    <div className='sm:h-[70vh] h-full w-[400px] ms-8   sm:w-full overflow-x-scroll  sm:overflow-x-hidden flex flex-row sm:flex-col  sm:gap-y-8  sm:overflow-y-scroll' >
       {data.map((item) => {
         return (
-          <div key={item.id} className="flex min-w-[400px] p-4 w-full justify-between  flex-col gap-y-8 items-center sm:flex-row m-auto  ">
+          <div key={item.id} className="flex min-w-[400px] p-4 w-full justify-center gap-x-8  flex-col gap-y-4 items-center sm:flex-row m-auto  ">
           {
             item.id === 1 
             ? <Image src={step1} width={400} height={300} className="w-[300px] sm:w-[350px] " alt="hero1"/>
