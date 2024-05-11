@@ -26,3 +26,26 @@
   background: #E11C93;
   border-radius: 20px;
 }
+
+.scroll-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+
+}
+
+
+@media screen and (min-width: 640px) {
+  .scroll-container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .scroll-item {
+    scroll-snap-align: start;
+  
+  }
+}
